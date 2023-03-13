@@ -49,12 +49,12 @@ a {
 }
 @media (hover: hover) {
     .btn:hover {
-        background: var(--primary-color);
+        background: blue;
     }
 }
 
 .btn-wrap {
-    display: flex;
+    display: inline-flexbox;
     margin-top: 30px; 
 }
 
@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-   font-size: 33px;
+   font-size: 45px;
    line-height: 45px;
    letter-spacing: 0;
    color: var(--primary-color);
@@ -208,14 +208,14 @@ p {
     padding: 0 50px;
 }
 
-@media only screen and (max-width: 1070px) {
+/* @media only screen and (max-width: 1070px) {
     .container {
         padding: 50px 20px;
     }
     .container-large {
         padding: 0 20px; 
     }
-}
+} */
 
 
 /* Background Colors */
@@ -238,7 +238,7 @@ p {
 
 
 /* Text Colors */
-
+ 
 .tc-wht {
     color: var(--white-color);
 }
@@ -268,6 +268,8 @@ p {
 /******************** SITE HEADER *********************/
 /******************************************************/
 /******************************************************/
+
+
 
 header.main-header {
     padding: 10px 0; 
@@ -328,6 +330,8 @@ header.main-header .menu-item a.active:after {
     margin-bottom: 5px; 
 }
 
+
+
 .mobile-nav-menu {
     display: none;
     position: absolute;
@@ -358,9 +362,9 @@ header.main-header .menu-item a.active:after {
 
 .hero-banner-section {
     background: url(https://cdn.freshfruitportal.com/2020/09/Palta.shutterstock_261520853-1.jpg) no-repeat center / cover;
-    height: 50vw; 
+    height: 25vh; 
     max-height: 700px;
-    min-height: 300px; 
+    min-height: 300px;
 }
 .hero-banner-section .text-wrap {
     max-width: 588px;
@@ -372,4 +376,20 @@ header.main-header .menu-item a.active:after {
   .hero-banner-section {
     height: auto;
   }
+}
+
+
+
+#testID {
+    text-align: start;
+    flex: auto;
+    overflow-y: auto;
+}
+
+.landing {
+    overflow: auto;
+    background-image: linear-gradient(black, rgb(36, 31, 31));
+    /* background: url(https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg) no-repeat center / cover; */
+    height: 50vh; 
+    max-height: 500px;
 }
