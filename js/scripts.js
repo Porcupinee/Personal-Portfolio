@@ -64,16 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
     createParticles();
     animateParticles();
 
-    function scrollToAbout() {
-        const aboutSection = document.getElementById("about-section");
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-      }
+    function scrollToAbout(event) {
+      event.preventDefault(); // Add this line to prevent the default behavior of the link
+      const aboutSection = document.getElementById("about-section");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
     
-      const aboutButton = document.querySelector(".button-about");
-      aboutButton.addEventListener("click", scrollToAbout);
-
-
-
+    const aboutButton = document.querySelector(".button-about");
+    aboutButton.addEventListener("click", scrollToAbout);
+    
 });
 
 

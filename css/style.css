@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: white;
   height: 100%;
   width: 100%;
@@ -26,29 +26,28 @@ body {
 }
 
 .navbar {
-  background-color: white;
+  background-color: #D9D9D9;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 60px;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 5%;
+  padding: 0 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .nav-link {
   text-decoration: none;
   color: black;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 12px 25px;
   margin-right: 20px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
@@ -58,14 +57,14 @@ body {
 
 .nav-link.active {
   background-color: rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.8);
+  color: #000000;
 }
 
-.container {
+.landing-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 100vh;
+  height: calc(100vh - 60px);
   position: relative;
   margin-top: 0;
   scroll-snap-align: start;
@@ -108,7 +107,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   gap: 30px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 
@@ -132,12 +131,6 @@ body {
   color: #000000; /* make the text black when hovered */
 }
 
-
-.canvas-container {
-  /* height: 100vh; */
-  position: relative;
-}
-
 canvas#particleCanvas {
   position: fixed;
   top: 0;
@@ -149,33 +142,51 @@ canvas#particleCanvas {
 
 .snap-section {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2c3e50;
+  background-color: #9faab6;
   position: relative;
   z-index: -1;
 }
 
-.content {
-  text-align: center;
-  color: white;
-  max-width: 80%;
-  padding: 20px;
+.about-me-content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-#about-section .content {
+.text-content {
+  width: 50%;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
 }
 
-#about-section img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.text-content h2 {
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.image-content {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  max-height: 90%;
   object-fit: cover;
 }
