@@ -156,7 +156,7 @@ canvas#particleCanvas {
 
 .text-content {
   color: #000000;
-  width: 50%;
+  width: 65%;
   padding: 2.5%; /* This will add padding around the text */
   display: flex;
   flex-direction: column;
@@ -178,7 +178,7 @@ canvas#particleCanvas {
 }
 
 .image-content {
-  width: 50%;
+  width: 35%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -215,3 +215,39 @@ canvas#particleCanvas {
   z-index: -1;
 }
   
+
+.hide {
+  opacity: 0;
+}
+
+/* slide-in animation for h2 */
+.slide-in-down {
+  animation: slideInDown 1s ease-out forwards;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* slide-in animation for image-row */
+.slide-in-up {
+  animation: slideInUp 1s ease-out forwards;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
