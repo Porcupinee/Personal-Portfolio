@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 20px;
+  padding: 0 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1.1rem;
   font-weight: 300;
@@ -47,7 +47,7 @@ body {
   color: black;
   font-weight: 500;
   padding: 12px 25px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .nav-link:hover {
@@ -58,6 +58,12 @@ body {
 .nav-link.active {
   background-color: rgba(0, 0, 0, 0.1);
   color: #000000;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    font-size: 0.72rem;
+  }
 }
 
 .landing-container {
@@ -151,7 +157,7 @@ canvas#particleCanvas {
   display: flex;
   width: 100%;
   height: calc(100vh - 60px);
-  justify-content: space-between; /* This will create space between the text and image content */
+  justify-content: space-between;
 }
 
 .text-content {
