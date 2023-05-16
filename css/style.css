@@ -98,7 +98,7 @@ body {
   letter-spacing: 0.5em;
 }
 
-.title-block h2 {
+h2 {
   font-family: inherit;
   font-style: inherit;
   font-weight: 700;
@@ -106,6 +106,7 @@ body {
   line-height: 39px;
   letter-spacing: 0.15em;
 }
+
 
 .button-container {
   margin-left: 40px;
@@ -147,32 +148,28 @@ canvas#particleCanvas {
 }
 
 .snap-section {
-  height: 100vh;
   background-color: #D9D9D9;
-  position: relative;
-  z-index: -1;
 }
 
 .about-me-content {
   display: flex;
   width: 100%;
-  height: calc(100vh - 60px);
-  justify-content: space-between;
 }
 
 .text-content {
   color: #000000;
-  width: 65%;
-  padding: 2.5%; /* This will add padding around the text */
+  width: 100%;
+  padding: 20px;
+}
+
+.text-and-logo-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This will push the image-row to the bottom */
+  flex: 1;
+  padding-bottom: 16px;
 }
 
 .text-content h2 {
-  font-size: 32px;
-  line-height: 39px;
-  letter-spacing: 0.15em;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -201,27 +198,26 @@ canvas#particleCanvas {
   width: 50%;
   display: flex;
   justify-content: space-evenly; 
-  padding-top: 8px;
+  padding: 16px 0px 16px 0px;
+  
 }
 
 .image-row img {
-  width: 35px; /* Adjust this to change the size of the images */
-  height: 35px; /* Adjust this to change the size of the images */
-  object-fit: cover; /* This will make sure the images keep their aspect ratio */
+  width: 35px; 
+  height: 35px; 
+  object-fit: cover; 
 }
 
 .logo-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  height: 100vh;
-  background-color: #D9D9D9;
-  position: relative;
-  z-index: -1;
+  color: #000000;
+  padding-top: 20px;
 }
-  
 
+
+  
 .hide {
   opacity: 0;
 }
@@ -255,5 +251,49 @@ canvas#particleCanvas {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .image-row img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .title-block h1 {
+    font-size: 36px;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    font-size: 0.8rem;
+  }
+
+  .image-content img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .image-content {
+    width: 100%;
+  }
+
+  .text-and-logo-content {
+    order: 2;
+  }
+
+  .image-content {
+    order: 1;
   }
 }

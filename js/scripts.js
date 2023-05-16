@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const aboutTitle = document.querySelector(".text-content h2");
   const imageRow = document.querySelector(".image-row");
   const logoSection = document.querySelector(".logo-section h3");
+  const logoButton = document.querySelector(".logo-section .button");
 
   aboutButton.addEventListener("click", function(event) {
     event.preventDefault();
@@ -87,10 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutTitle.classList.add('slide-in-down');
         imageRow.classList.add('slide-in-up');
         logoSection.classList.add('slide-in-up');
+        logoButton.classList.add('slide-in-up'); // add animation to the button
       } else { // target leaves the viewport
         aboutTitle.classList.remove('slide-in-down');
         imageRow.classList.remove('slide-in-up');
         logoSection.classList.remove('slide-in-up');
+        logoButton.classList.remove('slide-in-up'); // remove animation from the button
       }
     });
   }
