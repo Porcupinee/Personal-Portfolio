@@ -102,5 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // start observing
   observer.observe(aboutSection);
-});
 
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener("scroll", function () {
+    const currentScrollPos = window.pageYOffset;
+  
+    if (prevScrollPos > currentScrollPos) {
+      document.querySelector(".navbar").style.transition = "top 0.3s";
+      document.querySelector(".navbar").style.top = "0";
+    } else {
+      document.querySelector(".navbar").style.transition = "top 0.3s";
+      document.querySelector(".navbar").style.top = "-60px";
+    }
+  
+    prevScrollPos = currentScrollPos;
+  });
+});

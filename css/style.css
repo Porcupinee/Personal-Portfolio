@@ -147,6 +147,12 @@ canvas#particleCanvas {
   height: 100%;
 }
 
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .snap-section {
   background-color: #D9D9D9;
 }
@@ -181,7 +187,7 @@ canvas#particleCanvas {
 }
 
 .image-content {
-  width: 35%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -296,4 +302,39 @@ canvas#particleCanvas {
   .image-content {
     order: 1;
   }
+}
+
+.splide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  color: black;
+  background-color: #D9D9D9;
+  padding: 0 20px;
+}
+
+.splide {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+.slide-img {
+  width: 100%;
+  height: 50%;
+  object-fit: initial;
+}
+
+.slide-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.slide-description {
+  font-size: 1rem;
+  text-align: justify;
+
 }
