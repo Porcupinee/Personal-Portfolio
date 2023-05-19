@@ -3,28 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Harrison Tolley</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Harrison Tolley - RESUME</title>
   <link rel="stylesheet" href="../css/style.css">
-  <script src="scripts.js" defer></script>
 </head>
-<body>
+<body class="resume">
   <nav class="navbar">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="resume.html" class="nav-link active">Resume</a>
-    <a href="contact.html" class="nav-link">Contact Me</a>
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="projects.html" class="nav-link">PROJECTS</a>
+    <a href="resume.html" class="nav-link active">RESUME</a>
+    <a href="contact.html" class="nav-link">CONTACT ME</a>
   </nav>
-  
   <main class="container resume-container">
-    <header>
-      <h1>My Resume</h1>
+    <header id="resume-header">
+      <div class="button invisible"></div>
+      <h1>RESUME</h1>
+      <a href="../resume.pdf" download="Harrison_Tolley_Resume.pdf" class="button">DOWNLOAD</a>
     </header>
     <section class="pdf-section">
-      <iframe class="pdf-iframe" src="../resume.pdf" title="Harrison Tolley's Resume" allowfullscreen></iframe>
-      <a href="../resume.pdf" download="Harrison_Tolley_Resume.pdf" class="button">Download Resume</a>
+      <iframe class="pdf-iframe" src="../resume.pdf#toolbar=0" title="Harrison Tolley's Resume" allowfullscreen></iframe>
     </section>
   </main>
 </body>

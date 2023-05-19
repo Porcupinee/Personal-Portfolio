@@ -2,39 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me - Harrison Tolley</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Harrison Tolley - Contact</title>
   <link rel="stylesheet" href="../css/style.css">
-  <script src="scripts.js" defer></script>
+  <script src="\../js/scripts.js"></script>
 </head>
-<body>
+<body class="contact-me">
   <nav class="navbar">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="resume.html" class="nav-link">Resume</a>
-    <a href="contact.html" class="nav-link active">Contact Me</a>
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="projects.html" class="nav-link">PROJECTS</a>
+    <a href="resume.html" class="nav-link">RESUME</a>
+    <a href="contact.html" class="nav-link active">CONTACT ME</a>
   </nav>
-  <main class="container contact-container">
-    <header>
-      <h1>Contact Me</h1>
-    </header>
-    <section class="contact-section">
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <input type="submit" value="Send Message" class="button">
-      </form>
-    </section>
-  </main>
+  
+  <div class="canvas-container">
+    <canvas id="particleCanvas"></canvas>
+    <main class="contact-container">
+      <img src="../imgs/Snapchat-1570438252.jpg" alt="Profile Image" class="profile-image">
+      <h1 class="contact-name">HARRISON TOLLEY</h1>
+        <span class="info-item">+61 490 897 293       |      htolley0@gmail.com</span>
+      <footer class="contact-footer">
+        <h4>CONNECT WITH ME</h4>
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/profile.php?id=100013323606713" target="_blank">
+            <img src="../imgs/facebook-logo.png" alt="Facebook Profile">
+          </a>
+          <a href="https://www.linkedin.com/in/harry-tolley-613569266/" target="_blank">
+            <img src="../imgs/linkedin-logo.png" alt="LinkedIn Profile">
+          </a>
+          <a href="https://github.com/Porcupinee" target="_blank">
+            <img src="../imgs/github-logo.png" alt="GitHub Profile">
+          </a>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
